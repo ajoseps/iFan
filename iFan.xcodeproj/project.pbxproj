@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F490B8C217C3D85900A8BA84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490B8C117C3D85900A8BA84 /* UIKit.framework */; };
+		F490B8C417C3D85900A8BA84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490B8C317C3D85900A8BA84 /* Foundation.framework */; };
+		F490B8C617C3D85900A8BA84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490B8C517C3D85900A8BA84 /* CoreGraphics.framework */; };
+		F490B8CC17C3D85900A8BA84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F490B8CA17C3D85900A8BA84 /* InfoPlist.strings */; };
+		F490B8CE17C3D85900A8BA84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F490B8CD17C3D85900A8BA84 /* main.m */; };
+		F490B8D217C3D85900A8BA84 /* FanAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F490B8D117C3D85900A8BA84 /* FanAppDelegate.m */; };
+		F490B8D417C3D85900A8BA84 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F490B8D317C3D85900A8BA84 /* Default.png */; };
+		F490B8D617C3D85A00A8BA84 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F490B8D517C3D85A00A8BA84 /* Default@2x.png */; };
+		F490B8D817C3D85A00A8BA84 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F490B8D717C3D85A00A8BA84 /* Default-568h@2x.png */; };
+		F490B8DB17C3D85A00A8BA84 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F490B8D917C3D85A00A8BA84 /* MainStoryboard_iPhone.storyboard */; };
+		F490B8DE17C3D85A00A8BA84 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F490B8DC17C3D85A00A8BA84 /* MainStoryboard_iPad.storyboard */; };
+		F490B8E117C3D85A00A8BA84 /* FanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F490B8E017C3D85A00A8BA84 /* FanViewController.m */; };
+		F490B8E917C3D85A00A8BA84 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490B8E817C3D85A00A8BA84 /* SenTestingKit.framework */; };
+		F490B8EA17C3D85A00A8BA84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490B8C117C3D85900A8BA84 /* UIKit.framework */; };
+		F490B8EB17C3D85A00A8BA84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F490B8C317C3D85900A8BA84 /* Foundation.framework */; };
+		F490B8F317C3D85A00A8BA84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F490B8F117C3D85A00A8BA84 /* InfoPlist.strings */; };
+		F490B8F617C3D85A00A8BA84 /* iFanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F490B8F517C3D85A00A8BA84 /* iFanTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F490B8EC17C3D85A00A8BA84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F490B8B617C3D85900A8BA84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F490B8BD17C3D85900A8BA84;
+			remoteInfo = iFan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F490B8BE17C3D85900A8BA84 /* iFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F490B8C117C3D85900A8BA84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F490B8C317C3D85900A8BA84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F490B8C517C3D85900A8BA84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F490B8C917C3D85900A8BA84 /* iFan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iFan-Info.plist"; sourceTree = "<group>"; };
+		F490B8CB17C3D85900A8BA84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F490B8CD17C3D85900A8BA84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F490B8CF17C3D85900A8BA84 /* iFan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iFan-Prefix.pch"; sourceTree = "<group>"; };
+		F490B8D017C3D85900A8BA84 /* FanAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FanAppDelegate.h; sourceTree = "<group>"; };
+		F490B8D117C3D85900A8BA84 /* FanAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanAppDelegate.m; sourceTree = "<group>"; };
+		F490B8D317C3D85900A8BA84 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F490B8D517C3D85A00A8BA84 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F490B8D717C3D85A00A8BA84 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F490B8DA17C3D85A00A8BA84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		F490B8DD17C3D85A00A8BA84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F490B8DF17C3D85A00A8BA84 /* FanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FanViewController.h; sourceTree = "<group>"; };
+		F490B8E017C3D85A00A8BA84 /* FanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanViewController.m; sourceTree = "<group>"; };
+		F490B8E717C3D85A00A8BA84 /* iFanTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFanTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F490B8E817C3D85A00A8BA84 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F490B8F017C3D85A00A8BA84 /* iFanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iFanTests-Info.plist"; sourceTree = "<group>"; };
+		F490B8F217C3D85A00A8BA84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F490B8F417C3D85A00A8BA84 /* iFanTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iFanTests.h; sourceTree = "<group>"; };
+		F490B8F517C3D85A00A8BA84 /* iFanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFanTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F490B8BB17C3D85900A8BA84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490B8C217C3D85900A8BA84 /* UIKit.framework in Frameworks */,
+				F490B8C417C3D85900A8BA84 /* Foundation.framework in Frameworks */,
+				F490B8C617C3D85900A8BA84 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F490B8E317C3D85A00A8BA84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490B8E917C3D85A00A8BA84 /* SenTestingKit.framework in Frameworks */,
+				F490B8EA17C3D85A00A8BA84 /* UIKit.framework in Frameworks */,
+				F490B8EB17C3D85A00A8BA84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F490B8B517C3D85900A8BA84 = {
+			isa = PBXGroup;
+			children = (
+				F490B8C717C3D85900A8BA84 /* iFan */,
+				F490B8EE17C3D85A00A8BA84 /* iFanTests */,
+				F490B8C017C3D85900A8BA84 /* Frameworks */,
+				F490B8BF17C3D85900A8BA84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F490B8BF17C3D85900A8BA84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F490B8BE17C3D85900A8BA84 /* iFan.app */,
+				F490B8E717C3D85A00A8BA84 /* iFanTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F490B8C017C3D85900A8BA84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F490B8C117C3D85900A8BA84 /* UIKit.framework */,
+				F490B8C317C3D85900A8BA84 /* Foundation.framework */,
+				F490B8C517C3D85900A8BA84 /* CoreGraphics.framework */,
+				F490B8E817C3D85A00A8BA84 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F490B8C717C3D85900A8BA84 /* iFan */ = {
+			isa = PBXGroup;
+			children = (
+				F490B8D017C3D85900A8BA84 /* FanAppDelegate.h */,
+				F490B8D117C3D85900A8BA84 /* FanAppDelegate.m */,
+				F490B8D917C3D85A00A8BA84 /* MainStoryboard_iPhone.storyboard */,
+				F490B8DC17C3D85A00A8BA84 /* MainStoryboard_iPad.storyboard */,
+				F490B8DF17C3D85A00A8BA84 /* FanViewController.h */,
+				F490B8E017C3D85A00A8BA84 /* FanViewController.m */,
+				F490B8C817C3D85900A8BA84 /* Supporting Files */,
+			);
+			path = iFan;
+			sourceTree = "<group>";
+		};
+		F490B8C817C3D85900A8BA84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F490B8C917C3D85900A8BA84 /* iFan-Info.plist */,
+				F490B8CA17C3D85900A8BA84 /* InfoPlist.strings */,
+				F490B8CD17C3D85900A8BA84 /* main.m */,
+				F490B8CF17C3D85900A8BA84 /* iFan-Prefix.pch */,
+				F490B8D317C3D85900A8BA84 /* Default.png */,
+				F490B8D517C3D85A00A8BA84 /* Default@2x.png */,
+				F490B8D717C3D85A00A8BA84 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F490B8EE17C3D85A00A8BA84 /* iFanTests */ = {
+			isa = PBXGroup;
+			children = (
+				F490B8F417C3D85A00A8BA84 /* iFanTests.h */,
+				F490B8F517C3D85A00A8BA84 /* iFanTests.m */,
+				F490B8EF17C3D85A00A8BA84 /* Supporting Files */,
+			);
+			path = iFanTests;
+			sourceTree = "<group>";
+		};
+		F490B8EF17C3D85A00A8BA84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F490B8F017C3D85A00A8BA84 /* iFanTests-Info.plist */,
+				F490B8F117C3D85A00A8BA84 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F490B8BD17C3D85900A8BA84 /* iFan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F490B8F917C3D85A00A8BA84 /* Build configuration list for PBXNativeTarget "iFan" */;
+			buildPhases = (
+				F490B8BA17C3D85900A8BA84 /* Sources */,
+				F490B8BB17C3D85900A8BA84 /* Frameworks */,
+				F490B8BC17C3D85900A8BA84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iFan;
+			productName = iFan;
+			productReference = F490B8BE17C3D85900A8BA84 /* iFan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F490B8E617C3D85A00A8BA84 /* iFanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F490B8FC17C3D85A00A8BA84 /* Build configuration list for PBXNativeTarget "iFanTests" */;
+			buildPhases = (
+				F490B8E217C3D85A00A8BA84 /* Sources */,
+				F490B8E317C3D85A00A8BA84 /* Frameworks */,
+				F490B8E417C3D85A00A8BA84 /* Resources */,
+				F490B8E517C3D85A00A8BA84 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F490B8ED17C3D85A00A8BA84 /* PBXTargetDependency */,
+			);
+			name = iFanTests;
+			productName = iFanTests;
+			productReference = F490B8E717C3D85A00A8BA84 /* iFanTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F490B8B617C3D85900A8BA84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Fan;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Arun Joseph";
+			};
+			buildConfigurationList = F490B8B917C3D85900A8BA84 /* Build configuration list for PBXProject "iFan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F490B8B517C3D85900A8BA84;
+			productRefGroup = F490B8BF17C3D85900A8BA84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F490B8BD17C3D85900A8BA84 /* iFan */,
+				F490B8E617C3D85A00A8BA84 /* iFanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F490B8BC17C3D85900A8BA84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490B8CC17C3D85900A8BA84 /* InfoPlist.strings in Resources */,
+				F490B8D417C3D85900A8BA84 /* Default.png in Resources */,
+				F490B8D617C3D85A00A8BA84 /* Default@2x.png in Resources */,
+				F490B8D817C3D85A00A8BA84 /* Default-568h@2x.png in Resources */,
+				F490B8DB17C3D85A00A8BA84 /* MainStoryboard_iPhone.storyboard in Resources */,
+				F490B8DE17C3D85A00A8BA84 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F490B8E417C3D85A00A8BA84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490B8F317C3D85A00A8BA84 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F490B8E517C3D85A00A8BA84 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F490B8BA17C3D85900A8BA84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490B8CE17C3D85900A8BA84 /* main.m in Sources */,
+				F490B8D217C3D85900A8BA84 /* FanAppDelegate.m in Sources */,
+				F490B8E117C3D85A00A8BA84 /* FanViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F490B8E217C3D85A00A8BA84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F490B8F617C3D85A00A8BA84 /* iFanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F490B8ED17C3D85A00A8BA84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F490B8BD17C3D85900A8BA84 /* iFan */;
+			targetProxy = F490B8EC17C3D85A00A8BA84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F490B8CA17C3D85900A8BA84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F490B8CB17C3D85900A8BA84 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F490B8D917C3D85A00A8BA84 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F490B8DA17C3D85A00A8BA84 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F490B8DC17C3D85A00A8BA84 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F490B8DD17C3D85A00A8BA84 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F490B8F117C3D85A00A8BA84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F490B8F217C3D85A00A8BA84 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F490B8F717C3D85A00A8BA84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F490B8F817C3D85A00A8BA84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F490B8FA17C3D85A00A8BA84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iFan/iFan-Prefix.pch";
+				INFOPLIST_FILE = "iFan/iFan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F490B8FB17C3D85A00A8BA84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iFan/iFan-Prefix.pch";
+				INFOPLIST_FILE = "iFan/iFan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F490B8FD17C3D85A00A8BA84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iFan.app/iFan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iFan/iFan-Prefix.pch";
+				INFOPLIST_FILE = "iFanTests/iFanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F490B8FE17C3D85A00A8BA84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iFan.app/iFan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iFan/iFan-Prefix.pch";
+				INFOPLIST_FILE = "iFanTests/iFanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F490B8B917C3D85900A8BA84 /* Build configuration list for PBXProject "iFan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F490B8F717C3D85A00A8BA84 /* Debug */,
+				F490B8F817C3D85A00A8BA84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F490B8F917C3D85A00A8BA84 /* Build configuration list for PBXNativeTarget "iFan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F490B8FA17C3D85A00A8BA84 /* Debug */,
+				F490B8FB17C3D85A00A8BA84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F490B8FC17C3D85A00A8BA84 /* Build configuration list for PBXNativeTarget "iFanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F490B8FD17C3D85A00A8BA84 /* Debug */,
+				F490B8FE17C3D85A00A8BA84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F490B8B617C3D85900A8BA84 /* Project object */;
+}
