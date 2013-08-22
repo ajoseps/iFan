@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FanViewController : UIViewController
+@interface FanViewController : UIViewController {
+    IBOutlet UILabel *mysetting;
+    IBOutlet UIButton *mybuttonhigh;
+    IBOutlet UIButton *mybuttonlow;
+    IBOutlet UIButton *mybuttonoff;
+}
+@property (nonatomic) UILabel *mysetting;
+@property (nonatomic) UIButton *mybuttonhigh;
+@property (nonatomic) UIButton *mybuttonlow;
+@property (nonatomic) UIButton *mybuttonoff;
+
 
 @end
