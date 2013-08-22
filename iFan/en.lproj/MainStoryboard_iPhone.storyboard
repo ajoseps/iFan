@@ -103,20 +103,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="FanViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FanViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mybuttonhigh" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="mybuttonlow" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="mybuttonoff" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="mysetting" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
