@@ -8,6 +8,7 @@
 
 #import "FanViewController.h"
 #import "Base64.h"
+#import "UIButton+NUI.h"
 
 @interface FanViewController ()
 
@@ -102,16 +103,19 @@
     [super viewDidLoad];
     mysetting.text = @"Off";
     
+    mybuttonhigh.nuiClass = @"Button:HighButton";
     [mybuttonhigh setTitle:@"High" forState: (UIControlState)UIControlStateNormal];
     [mybuttonhigh addTarget:self
                     action:@selector(myButtonClickHigh:)
                     forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
     
+    mybuttonlow.nuiClass = @"Button:LowButton";
     [mybuttonlow setTitle:@"Low" forState: (UIControlState)UIControlStateNormal];
     [mybuttonlow addTarget:self
                     action:@selector(myButtonClickLow:)
                     forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
     
+    mybuttonoff.nuiClass = @"Button:OffButton";
     [mybuttonoff setTitle:@"Off" forState: (UIControlState)UIControlStateNormal];
     [mybuttonoff addTarget:self
                     action:@selector(myButtonClickOff:)

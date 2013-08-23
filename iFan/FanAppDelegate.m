@@ -7,13 +7,13 @@
 //
 
 #import "FanAppDelegate.h"
+#import "NUIAppearance.h"
 
 @implementation FanAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //[NUIAppearance init];
-    
+    [NUIAppearance init];
     // Override point for customization after application launch.
     return YES;
 }

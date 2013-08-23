@@ -19,7 +19,8 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvx-0s-TeW">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="gFo-Hs-Q6h"/>
+                                    <constraint firstAttribute="width" constant="250" id="Aag-cW-BbK"/>
+                                    <constraint firstAttribute="height" constant="90" id="ehw-KU-RXt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="High">
@@ -37,7 +38,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qn-Pw-oVg">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="121" id="MxA-4c-Raj"/>
+                                    <constraint firstAttribute="height" constant="90" id="oY2-ne-tMd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Low">
@@ -50,7 +51,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fq-jC-OHf">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="uVM-sf-IaK"/>
+                                    <constraint firstAttribute="height" constant="90" id="Uzx-OS-5KG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Off">
@@ -70,21 +71,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PJB-gA-ahV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="108" id="2Ae-Pm-9X3"/>
+                            <constraint firstItem="8Fq-jC-OHf" firstAttribute="trailing" secondItem="7qn-Pw-oVg" secondAttribute="trailing" type="default" id="4b9-ea-0dP"/>
                             <constraint firstItem="h36-D4-xPs" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="59X-yp-hAz"/>
+                            <constraint firstItem="PJB-gA-ahV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="66" id="8Ol-9G-vQd"/>
                             <constraint firstItem="PJB-gA-ahV" firstAttribute="baseline" secondItem="Zrz-oN-v3E" secondAttribute="baseline" type="default" id="9G2-fl-Wdu"/>
-                            <constraint firstItem="tvx-0s-TeW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="87" id="D2g-CO-EWU"/>
-                            <constraint firstItem="7qn-Pw-oVg" firstAttribute="top" secondItem="tvx-0s-TeW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="HUC-ad-Yas"/>
-                            <constraint firstItem="tvx-0s-TeW" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Kpm-FS-qSS"/>
-                            <constraint firstItem="7qn-Pw-oVg" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="LZA-U8-qAf"/>
-                            <constraint firstItem="8Fq-jC-OHf" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="M0D-po-ghk"/>
+                            <constraint firstItem="tvx-0s-TeW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="117" id="An3-yQ-hF8"/>
+                            <constraint firstItem="7qn-Pw-oVg" firstAttribute="top" secondItem="3" secondAttribute="top" constant="234" id="CBF-FT-Ud3"/>
+                            <constraint firstAttribute="bottom" secondItem="8Fq-jC-OHf" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="IFg-8H-g3i"/>
+                            <constraint firstItem="tvx-0s-TeW" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="37" id="OmI-E8-bDo"/>
+                            <constraint firstItem="7qn-Pw-oVg" firstAttribute="trailing" secondItem="tvx-0s-TeW" secondAttribute="trailing" type="default" id="Rgc-nu-Y8Y"/>
                             <constraint firstItem="h36-D4-xPs" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="VB1-Cv-itu"/>
-                            <constraint firstItem="8Fq-jC-OHf" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Z8c-jI-HzE"/>
-                            <constraint firstItem="7qn-Pw-oVg" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="f1R-OF-rYG"/>
-                            <constraint firstItem="tvx-0s-TeW" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="hng-HP-G06"/>
+                            <constraint firstItem="tvx-0s-TeW" firstAttribute="leading" secondItem="7qn-Pw-oVg" secondAttribute="leading" type="default" id="c1J-bF-XvX"/>
                             <constraint firstItem="Zrz-oN-v3E" firstAttribute="leading" secondItem="PJB-gA-ahV" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="kj4-Dn-dNg"/>
-                            <constraint firstItem="8Fq-jC-OHf" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="puZ-eR-A0t"/>
+                            <constraint firstItem="7qn-Pw-oVg" firstAttribute="leading" secondItem="8Fq-jC-OHf" secondAttribute="leading" type="default" id="xYO-Qt-Bhr"/>
                             <constraint firstItem="h36-D4-xPs" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="yFq-NU-FNw"/>
-                            <constraint firstItem="PJB-gA-ahV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="51" id="zZW-l8-bOp"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -103,6 +103,20 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="FanViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FanViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mybuttonhigh" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mybuttonlow" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mybuttonoff" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mysetting" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
