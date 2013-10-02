@@ -6,7 +6,7 @@
 @primaryFontColor: #555555;
 @secondaryFontColor: #888888;
 @tertiaryFontColor: #34495e
-@primaryBackgroundColor: #1abc9c;
+@primaryBackgroundColor: #95a5a6;
 
 @primaryHighButtonColor: #e74c3c;
 @secondaryHighButtonColor: #c0392b;
@@ -17,7 +17,7 @@
 
 @primaryHighlightedColor: #27ae60 
 @primaryBackgroundTintColor: #ECECEC;
-@primaryBackgroundColorTop: #F3F3F3;
+@primaryBackgroundColorTop: #E6E6E6;
 @primaryBackgroundColorBottom: #E6E6E6;
 @primaryBackgroundColorBottomStrong: #DDDDDD;
 @secondaryBackgroundColorTop: #FCFCFC;
@@ -150,6 +150,7 @@ TextField {
     border-style: rounded;
     vertical-align: center;
 }
+
 LargeTextField {
     height: 50;
     font-size: 28;

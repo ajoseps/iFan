@@ -20,8 +20,7 @@
 @synthesize mybuttonlow;
 @synthesize mybuttonoff;
 
-
--  (void)jsonRequest: (int) req{
+-  (void)jsonWriteRequest: (int) req{
     
     // Authorization Header
     NSString *accountID = @"5534b9b1-3813-5ed5-054b-7460cd818bee";
@@ -31,7 +30,7 @@
     NSString *authHeader = [NSString stringWithFormat: @" Basic %@", encodedUserPass];
     
     // Inserts URL
-    NSURL *url = [NSURL URLWithString:@"https://api.volt.ly/v1/digital_write"];
+    NSURL *url = [NSURL URLWithString:@"https://api.volt.ly/v1/digital-write"];
     NSMutableURLRequest *request1 = [[NSMutableURLRequest alloc] initWithURL:url];
     NSMutableURLRequest *request2 = [[NSMutableURLRequest alloc] initWithURL:url];
     
@@ -85,17 +84,56 @@
     [NSURLConnection connectionWithRequest:request2 delegate:self];
     }
 
+-  (void)jsonReadRequest{
+    
+    // Authorization Header
+    NSString *accountID = @"5534b9b1-3813-5ed5-054b-7460cd818bee";
+    NSString *password = @"f804f69a16e777a21948e9521a21eb90";
+    NSString *userPass = [NSString stringWithFormat: @"%@:%@", accountID, password];
+    NSString *encodedUserPass = [userPass base64EncodedString];
+    NSString *authHeader = [NSString stringWithFormat: @" Basic %@", encodedUserPass];
+    
+    // Inserts URL
+    NSURL *url = [NSURL URLWithString:@"https://api.volt.ly/v1/digital-read"];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    
+    // Request Data
+    NSDictionary *tmp = [[NSDictionary alloc] initWithObjectsAndKeys:
+                          @"A0", @"Pin",
+                          @"Default", @"Tag",
+                          nil];
+    NSError *error;
+    NSData *postdata1 = [NSJSONSerialization dataWithJSONObject:tmp options:0 error:&error];
+    
+    // Setting Fields
+    [request setHTTPBody:postdata1];
+    [request setHTTPMethod:@"POST"];
+    [request setValue: authHeader forHTTPHeaderField:@"Authorization"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:[NSString stringWithFormat:@"%d", [postdata1 length]] forHTTPHeaderField:@"Content-Length"];
+    
+    NSHTTPURLResponse *response;
+    // Send Requests
+    [NSURLConnection connectionWithRequest:request delegate:self];
+    [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
+    if ([response respondsToSelector:@selector(allHeaderFields)]) {
+        NSDictionary *dictionary = [response allHeaderFields];
+        NSLog([dictionary description]);
+    }
+}
+
+
 -  (void)myButtonClickHigh:(id)sender {
     mysetting.text = @"High";
-    [self jsonRequest: 2];
+    [self jsonReadRequest];
 }
 -  (void)myButtonClickLow:(id)sender {
     mysetting.text = @"Low";
-    [self jsonRequest: 1];
+    [self jsonReadRequest];
 }
 -  (void)myButtonClickOff:(id)sender {
     mysetting.text = @"Off";
-    [self jsonRequest: 0];
+    [self jsonReadRequest];
 }
 
 - (void)viewDidLoad
